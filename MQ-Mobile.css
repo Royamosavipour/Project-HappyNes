@@ -3,11 +3,7 @@
   .navbar-nav li:hover {
     background-color: #ff9a3c31;
   }
-  .navbar-nav li {
-    margin: 5px 0 5px 15px;
-    padding: 5px 2px;
-    width: 100px;
-  }
+ 
   .nav-box{
    display:block;
   }
@@ -36,6 +32,15 @@
   .container-grid {
 
     display: none;
+  }
+
+  .slog-part h1{
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    z-index: 99999;
+  position: fixed;
+  top:17px;
   }
   
 
