@@ -1,24 +1,11 @@
 /* Media Queries Mobile  767*/
 @media screen and (max-width: 768px) {
-  .navbar-nav li:hover {
-    background-color: #ff9a3c31;
-  }
- 
-  .nav-box{
-   display:block;
-  }
-
- 
- 
   .box1-icon {
     background-color: var(--blue);
     margin-left: 15px;
     padding: 1rem;
     justify-content: flex-end;
-
   }
-
- 
 
   .slog-part h1 {
     font-size: 20px;
@@ -28,20 +15,22 @@
     order: -1;
     margin: 2rem 0;
   }
-  
-  .container-grid {
 
+  .container-grid {
     display: none;
   }
 
-  .slog-part h1{
+  /* .slog-part h1 {
     font-size: 1rem;
     padding: 0px;
     margin: 0px;
     z-index: 99999;
-  position: fixed;
-  top:17px;
+    position: fixed;
+  } */
+
+  .slog-part h1{
+    top: 17px;
+    
   }
-  
 
 }

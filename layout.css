@@ -13,7 +13,7 @@
 body {
   font-size: 56.2%;
   background-color: var(--beige);
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .Wrapper {
@@ -26,143 +26,94 @@ ul li {
 }
 
 /* Navbar Styel */
-
-.box{
-  background-color: var(--orange);
-}
-
-.logo{
-  width: 200px;
-  height: 100px;
+.logo {
+  width: 100px;
+  height: 50px;
   object-fit: cover;
+  margin: 0 1rem;
 }
 
-nav a{
-  font-size: 1.3rem;
+nav {
+  width: 100%;
+  background-color: var(--orange);
+  padding: 1rem 0;
+}
+
+#check {
+  display: none;
+}
+.checkBtn {
+  display: none;
+  font-size: 16px;
+  background-color: #277bc0;
+  width: 70px;
+  margin: auto 20px;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.title-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-nav li {
+  font-size: 20px;
 }
 
 
-
-@media screen and (min-width: 801px) {
-  .navicon {
+@media screen and (max-width: 768px) {
+  .logo {
     display: none;
   }
-
-  nav {
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: antiquewhite;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  nav {
-    width: 300px;
-    background: white;
-    color: rgba(0, 0, 0, 0.87);
-    -webkit-clip-path: circle(24px at 30px 24px);
-    clip-path: circle(24px at 32px 24px);
-    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-  }
-
-  nav:hover {
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-duration: 0.75s;
-    transition-duration: 0.75s;
-    -webkit-clip-path: circle(390px at 225px 24px);
-    clip-path: circle(390px at 150px 24px);
-  }
-
-  a {
+  .checkBtn{
     display: block;
-    line-height: 50px;
-    padding: 0 20px;
-    color: inherit;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 
-  a:hover {
-    background: #ffe082;
+  .title-nav{
+    width: 100%;
+    position: fixed;
+    background-color: var(--orange);
+    z-index: 9999;
+    left: -100%;
+align-items: flex-start;
+flex-direction: column;
+
   }
 
-  a:active {
-    background: #ffca28;
+  .title-nav li{
+    margin-left: 16px;
   }
 
-  .navicon {
-    padding: 23px 20px;
-    cursor: pointer;
-    -webkit-transform-origin: 32px 24px;
-    -ms-transform-origin: 32px 24px;
-    transform-origin: 32px 24px;
+
+
+
+  #check:checked ~ ul{
+    left: 0;
   }
 
-  .navicon div {
-    position: relative;
-    width: 20px;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.87);
-  }
 
-  .navicon div:before,
-  .navicon div:after {
-    display: block;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.87);
-    position: absolute;
-  }
 
-  .navicon div:before {
-    top: -7px;
-  }
 
-  .navicon div:after {
-    top: 7px;
-  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* End Style Navbar */
 
 .slog-part {
   background-color: #ff9a3c;
-  padding-top: 2rem;
+
   display: flex;
   justify-content: center;
 }
 
 .slog-part h1 {
   text-align: center;
-  /* margin: 3rem 0; */
-  padding: 4rem 2rem;
-  margin-top: 6rem;
+
+
 }
 
 .section-2 {
@@ -177,7 +128,6 @@ nav a{
   margin: 10px 20px;
   border: 1px solid gray;
   border-radius: 10px;
-
 }
 
 .blue {
@@ -365,81 +315,13 @@ nav a{
       "area-07 area-08";
   }
 
- 
-
-  .menu-btn {
-    display: block;
-  }
-
-  .navbar-box {
-    grid-template-columns: 1fr;
-    gap:5px;
-    width: 200px;
-  }
-
-  .navbar-box li{
-    text-align: center;
-  }
-
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
- 
-
-  .navbar-box li {
-    font-size: 15px;
-    margin:10px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .menu-btn {
-    width: 200px;
-    height: 50px;
-    padding:auto;
-    font-size: 30px;
-    border-radius: 4px;
-    text-align: center;
-    background-color: var(--orange);
-    border: none;
-  }
-
-  .navbar-box{
-    position: absolute;
-    top: 65px;
-    background-color: var(--orange);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 180ms ease-in;
-  }
-
-.section1:hover .navbar-box{
-  visibility: visible;
-  opacity: 1;
-
-}
-
-.nav-sectioon{
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.slog-part h1{
-  padding: 0px;
-  margin: 0px;
-  z-index: 99999;
-position: fixed;
-top:15px;
-}
-
-
-
+  /* .slog-part h1 {
+    padding: 0px;
+    margin: 0px;
+    z-index: 99999;
+    position: fixed;
+    top: 15px;
+  } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 1100px) {
