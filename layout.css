@@ -36,7 +36,7 @@ ul li {
 nav {
   width: 100%;
   background-color: var(--orange);
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 #check {
@@ -61,6 +61,13 @@ nav {
 
 .title-nav li {
   font-size: 20px;
+}
+.title-nav li a{
+  font-size: 25px;
+}
+.title-nav li a:hover{
+  border-bottom: 2px solid white;
+transition: all 0.8ms ease-in;
 }
 
 @media screen and (max-width: 768px) {
@@ -96,10 +103,14 @@ nav {
   background-color: #ff9a3c;
   display: flex;
   justify-content: center;
+  padding: 1rem 0;
+  
 }
 
 .slog-part h1 {
   text-align: center;
+margin-bottom: 1rem;
+
 }
 
 .section-2 {
@@ -115,6 +126,7 @@ nav {
   border: 1px solid gray;
   border-radius: 10px;
 }
+
 
 .blue {
   background-color: var(--blue);
