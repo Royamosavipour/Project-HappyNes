@@ -203,7 +203,7 @@ nav {
 }
 
 .container-grid {
-  padding: 0 4rem;
+
   width: 100%;
   height: 80vh;
   margin: auto;
@@ -346,5 +346,9 @@ nav {
       "area-06"
       "area-07"
       "area-08";
+  }
+
+  .title-footer li{
+    font-size:12px;
   }
 }
