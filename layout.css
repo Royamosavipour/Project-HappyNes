@@ -27,7 +27,7 @@ ul li {
 
 /* Navbar Styel */
 .logo {
-  width: 100px;
+  width: 180px;
   height: 50px;
   object-fit: cover;
   margin: 0 1rem;
@@ -62,12 +62,12 @@ nav {
 .title-nav li {
   font-size: 20px;
 }
-.title-nav li a{
-  font-size: 25px;
+.title-nav li a {
+  font-size: 20px;
 }
-.title-nav li a:hover{
+.title-nav li a:hover {
   border-bottom: 2px solid white;
-transition: all 0.8ms ease-in;
+  transition: all 0.8ms ease-in;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,13 +104,11 @@ transition: all 0.8ms ease-in;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  
 }
 
 .slog-part h1 {
   text-align: center;
-margin-bottom: 1rem;
-
+  margin-bottom: 1rem;
 }
 
 .section-2 {
@@ -127,7 +125,6 @@ margin-bottom: 1rem;
   border-radius: 10px;
 }
 
-
 .blue {
   background-color: var(--blue);
 }
@@ -137,6 +134,14 @@ margin-bottom: 1rem;
   justify-content: center;
   height: 250px;
   margin: 3rem 0px;
+}
+.box-section-2 {
+  transition: all 0.8ms ease-in;
+}
+
+.box-section-2:hover {
+  box-shadow: 1px 1px 10px 4px rgb(168, 168, 168);
+  border: none;
 }
 
 .box-section-2 p {
@@ -292,8 +297,21 @@ margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
 }
-
+/* 
 @media screen and (max-width: 1100px) {
+  
+  
+
+} */
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .section-footer {
+    padding: 0 4rem;
+  }
+
+  .img-footer {
+    align-self: -1;
+  }
   .title-footer li {
     font-size: 15px;
   }
@@ -312,22 +330,21 @@ margin-bottom: 1rem;
       "area-05 area-06"
       "area-07 area-08";
   }
-
-  /* .slog-part h1 {
-    padding: 0px;
-    margin: 0px;
-    z-index: 99999;
-    position: fixed;
-    top: 15px;
-  } */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1100px) {
-  .section-footer {
-    padding: 0 4rem;
-  }
-
-  .img-footer {
-    align-self: -1;
+@media screen and (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01"
+      "area-02"
+      "area-03"
+      "area-04"
+      "area-05"
+      "area-06"
+      "area-07"
+      "area-08";
   }
 }

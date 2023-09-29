@@ -10,6 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Kanit|Cabin">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./layout.css">
 
@@ -26,17 +27,13 @@
             <li> <a>Koti </a> </li>
             <li> <a>Tiedottet </a> </li>
             <li> <a>Dokomenti </a> </li>
-            <li><img src="./imge/logo.png" class="logo"></li>
+            <li><img src="./imge/HappyNest_logo.png" class="logo"></li>
             <li> <a>Koti </a> </li>
             <li> <a>Tiedottet </a> </li>
             <li> <a>Dokomenti </a> </li>
 
         </ul>
     </nav>
-
-
-
-
     <!-- Navbar End -->
 
     <!-- Section-2 -->
@@ -45,7 +42,7 @@
         <div class="slog-part">
             <h1>Tähän Tulee HappyNestin slogan</h1>
         </div>
-        <div class="container">
+        <div class="container wow animate__animated animate__slideInUp">
             <div class="row section-2">
                 <div class="col-md-3 box-section-2 blue">
                     <p>Varaa Vuoro</p>
@@ -59,7 +56,7 @@
             </div>
         </div>
         <!-- Start Sectin-3 -->
-        <div class="row">
+        <div class="row wow animate__animated animate__slideInUp">
             <div class="section-3">
                 <h1>Taloyhtiö Tiedosttaa</h1>
                 <h3>Uusia tiedoitteita</h3>
@@ -68,7 +65,7 @@
             </div>
         </div>
         <!-- Section-4 -->
-        <div class="row">
+        <div class="row wow animate__animated animate__slideInUp">
             <div class="section-4">
                 <h2>YHTESÖNILMOITSTAULU</h2>
                 <h2 class="slogan-section-4">Slogan ai muu vastaava tähän</h2>
@@ -124,7 +121,7 @@
                 </div>
 
                 <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
-                        src="./imge/LOGO.png" alt=""></div>
+                        src="./imge/HappyNest_logo.png" alt=""></div>
 
                 <div class="col-md-5 color creat-margin-right">
                     <div class="row">
@@ -163,8 +160,10 @@
 
 
 
-
-
+<script src="./wow.main.js"></script>
+    <script src="./app.js">
+        new WOW().init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
