@@ -3,11 +3,13 @@
 
 :root {
   --blue: #277bc0;
-  --yellow: #ffb200;
-  --orange: #ff9a3c;
-  --beige: #fff4cf;
-  --blue-box: #007fbf;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box: #407abb;
   --blue-box-1: #a7e7f6;
+  --black: #212121;
+
 }
 
 body {
@@ -36,15 +38,15 @@ ul li {
 
 /* Navbar Styel */
 .logo {
-  width: 180px;
-  height: 50px;
+  width: 300px;
+
   object-fit: cover;
   margin: 0 1rem;
 }
 
 nav {
   width: 100%;
-  background-color: var(--orange);
+  background-color: var(--yellow);
   padding: 2rem 0;
 }
 
@@ -109,7 +111,7 @@ nav {
 /* End Style Navbar */
 
 .slog-part {
-  background-color: #ff9a3c;
+  background-color:var(--yellow);
   display: flex;
   justify-content: center;
   padding: 1rem 0;
@@ -118,6 +120,7 @@ nav {
 .slog-part h1 {
   text-align: center;
   margin-bottom: 1rem;
+  color:var(--blue-box)
 }
 
 .section-2 {
@@ -130,12 +133,13 @@ nav {
   align-items: center;
   flex-direction: column;
   margin: 10px 20px;
-  border: 1px solid gray;
+
   border-radius: 10px;
 }
 
 .blue {
-  background-color: var(--blue);
+  background-color: var(--orange);
+
 }
 .section-2 {
   display: flex;
@@ -144,9 +148,7 @@ nav {
   height: 250px;
   margin: 3rem 0px;
 }
-.box-section-2 {
-  transition: all 0.8ms ease-in;
-}
+
 
 .box-section-2:hover {
   box-shadow: 3px 2px  4px rgb(168, 168, 168);
@@ -160,12 +162,24 @@ nav {
   font-weight: 800;
   margin-top: 2rem;
 }
+.box-image{
+
+
+  background-image: url(./imge/Screenshot\ 2023-09-15\ at\ 20.03.52.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+
+
+
+
+}
 
 .section-3 {
   width: 100%;
   height: 300px;
   margin: 3rem 0;
-  background-color: var(--orange);
+  background-color: var(--yellow);
   justify-content: center;
   align-items: center;
   display: flex;
