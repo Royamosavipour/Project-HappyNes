@@ -10,4 +10,39 @@ window.addEventListener("scroll", function () {
   scrolElem.style.width = scrollPerecentRound + "%";
 });
 
+const btnmodal=document.querySelector('.btnmodal')
+
+
+const pyykkitupaElem=document.querySelector('#pyykkitupa')
+const saunavuoroElem=document.querySelector('#saunavuoro')
+const saunaContainer=document.querySelector('.sauna-container')
+const pesukoneContainer=document.querySelector('.pesukone_container')
+const omatvarauksetElem=document.querySelector('.omatvaraukset')
+const modulcontainer=document.querySelector('.modulcontainer')
+
+
+
+pyykkitupaElem.addEventListener("click",()=>{
+  console.log('first')
+  pesukoneContainer.classList.toggle('pesukone_container')
+
+})
+
+saunavuoroElem.addEventListener("click",()=>{
+saunaContainer.classList.toggle('sauna-container')
+
+})
+
+omatvarauksetElem.addEventListener("click",()=>{
+  modulcontainer.classList.add('active')
+})
+
+modulcontainer.addEventListener("click",()=>{
+  modulcontainer.classList.remove('active')
+
+
+})
+
+
+
 

@@ -1,0 +1,171 @@
+body {
+  font-size: 56.2%;
+  background-color: var(--beige);
+  font-family: "Poppins";
+}
+
+:root {
+  --blue: #277bc0;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box: #407abb;
+  --blue-box-1: #a7e7f6;
+  --black: #212121;
+}
+
+/* Header******************************************** */
+.reservaition {
+  width: 100%;
+  height: 200px;
+  background-color: var(--yellow);
+}
+
+/* body Box Reservaition *****************/
+.reservaition-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: var(--blue);
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.reservaition-box P{
+    font-size: 30PX;
+}
+.reservaition-box:hover{
+    background-color:var(--blue-box-1);
+    box-shadow: 3px 6px 5px gainsboro;
+
+}
+
+.omatvaraukset:hover{
+    background-color:var(--blue-box-1);
+    box-shadow: 3px 6px 5px gainsboro;
+
+}
+
+.pesukone-box {
+  margin: 1rem;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.pesukone-box h1 {
+  font-size: 20px;
+}
+
+
+.pesukone_container{
+    display: none;
+
+ }
+
+ .sauna-container{
+    display: none;
+ }
+
+
+.sauna-box{
+    height: 100px;
+    background-color: var(--blue);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+.sauna-box p{
+    font-size: 24px;
+}
+.sauna-container{
+    margin-top: 5rem;
+}
+
+.sauna-1{
+    float: right;
+}
+
+.omatvaraukset{
+    background-color: var(--blue);
+    padding: 2rem;
+    width:30%;
+    cursor: pointer;
+    
+}
+.omatvaraukset P{
+    font-size: 30PX;
+    text-align: center;
+}
+.omatvaraukset-container{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* modal style******************* */
+.modulBox{
+    width: 40%;
+    background-color: var(--blue);
+    overflow: auto;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    position: fixed;
+    padding: 2rem;
+    
+}
+.modulBox p{
+    font-size: 18px;
+}
+
+.modulcontainer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.active{
+    display:flex;
+}
+
+.modal-shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 220, 220, 0.506);
+}
+
+
+
+.btnmodal{
+    height: max-content;
+    background-color: var(--orange);
+    font-size: 18px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
