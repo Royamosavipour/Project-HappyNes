@@ -133,8 +133,11 @@ nav {
   align-items: center;
   flex-direction: column;
   margin: 10px 20px;
-
   border-radius: 10px;
+}
+.box-section-2 a{
+  color: #212121;
+  text-decoration: none;
 }
 
 .blue {
