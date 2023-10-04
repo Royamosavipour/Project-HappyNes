@@ -10,7 +10,6 @@ window.addEventListener("scroll", function () {
   scrolElem.style.width = scrollPerecentRound + "%";
 });
 
-const btnmodal=document.querySelector('.btnmodal')
 
 
 const pyykkitupaElem=document.querySelector('#pyykkitupa')
@@ -19,6 +18,8 @@ const saunaContainer=document.querySelector('.sauna-container')
 const pesukoneContainer=document.querySelector('.pesukone_container')
 const omatvarauksetElem=document.querySelector('.omatvaraukset')
 const modulcontainer=document.querySelector('.modulcontainer')
+const btnmodal=document.querySelector('.btnmodal')
+
 
 
 
